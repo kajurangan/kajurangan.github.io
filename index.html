@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- EDIT: title and description are what Google shows in search results. -->
+<title>Kajurangan Vasantharajan | Computer Science Student, Serverless AWS &amp; Full-Stack</title>
+<meta name="description" content="Computer Science student at Toronto Metropolitan University. Former software engineering intern on BMO's Collections Dialer migration to Amazon Connect, building serverless AWS pipelines.">
+<meta name="author" content="Kajurangan Vasantharajan">
+<link rel="canonical" href="https://kajurangan.github.io/">
+
+<!-- Icons: the round photo is what Google shows beside the search result. -->
+<link rel="icon" href="images/favicon.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- Open Graph: the preview card when the link is shared.
+     EDIT: images/og.png should be 1200x630 for the card to render correctly. -->
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Kajurangan Vasantharajan">
+<meta property="og:description" content="Computer Science student at Toronto Metropolitan University. Serverless AWS and full-stack engineering.">
+<meta property="og:url" content="https://kajurangan.github.io/">
+<meta property="og:image" content="https://kajurangan.github.io/images/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kajurangan Vasantharajan, Computer Science, Toronto Metropolitan University">
+
+<!-- Structured data: helps Google recognise this as a person's home page. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Kajurangan Vasantharajan",
+  "url": "https://kajurangan.github.io/",
+  "image": "https://kajurangan.github.io/images/profile.jpg",
+  "jobTitle": "Computer Science Student",
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Toronto Metropolitan University" },
+  "address": { "@type": "PostalAddress", "addressLocality": "Toronto", "addressRegion": "ON", "addressCountry": "CA" },
+  "sameAs": ["https://www.linkedin.com/in/kajurangan/", "https://github.com/kajurangan"]
+}
+</script>
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Apply a saved dark-mode choice before first paint so there is no flash. -->
+<script>
+  (function () {
+    try {
+      var saved = localStorage.getItem('theme');
+      if (saved) document.documentElement.setAttribute('data-theme', saved);
+    } catch (e) { /* private browsing: fall back to the CSS media query */ }
+  })();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="wrap">
+
+  <!-- ===================================================================
+       SIDEBAR
+       EDIT: put a square photo at images/profile.jpg. Until then the
+       initials show instead.
+       =================================================================== -->
+  <aside class="side">
+    <div class="avatar">KV<img src="images/profile.jpg" alt="Kajurangan Vasantharajan" onerror="this.remove()"></div>
+    <h1>Kajurangan Vasantharajan</h1>
+    <p class="roles">
+      <b>Computer Science</b> student<br>
+      at <b>Toronto Metropolitan University</b><br>
+      Former SWE Intern, <b>BrainRidge Consulting</b> (BMO)
+    </p>
+    <div class="loc">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></svg>
+      Toronto, ON, Canada
+    </div>
+
+    <a class="cta" href="mailto:kajurangan2508@gmail.com">Get in touch</a>
+
+    <div class="social">
+      <a href="https://www.linkedin.com/in/kajurangan/" rel="me" aria-label="LinkedIn" title="LinkedIn">
+        <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+      </a>
+      <a href="https://github.com/kajurangan" rel="me" aria-label="GitHub" title="GitHub">
+        <svg viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .3z"/></svg>
+      </a>
+      <a href="mailto:kajurangan2508@gmail.com" aria-label="Email" title="Email">
+        <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5v2.2z"/></svg>
+      </a>
+      <button class="toggle" id="theme-toggle" type="button" aria-label="Toggle light and dark theme" title="Toggle theme">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0-5 1.5 3h-3L12 2zm0 20-1.5-3h3L12 22zM2 12l3-1.5v3L2 12zm20 0-3 1.5v-3L22 12zM4.9 4.9l3.2 1.1-2.1 2.1-1.1-3.2zm14.2 14.2-3.2-1.1 2.1-2.1 1.1 3.2zM4.9 19.1l1.1-3.2 2.1 2.1-3.2 1.1zM19.1 4.9 18 8.1 15.9 6l3.2-1.1z"/></svg>
+      </button>
+    </div>
+  </aside>
+
+
+  <!-- ===================================================================
+       RIGHT RAIL: section links. Keep in step with the card ids below.
+       =================================================================== -->
+  <nav class="rail" aria-label="Sections">
+    <details open>
+      <summary>Sections</summary>
+      <div class="rail-label">Sections</div>
+      <ul>
+        <li><a href="#about">About <span class="n">01</span></a></li>
+        <li><a href="#impact">Impact <span class="n">02</span></a></li>
+        <li><a href="#case-study">Case study <span class="n">03</span></a></li>
+        <li><a href="#experience">Experience <span class="n">04</span></a></li>
+        <li><a href="#projects">Projects <span class="n">05</span></a></li>
+        <li><a href="#skills">Skills <span class="n">06</span></a></li>
+        <li><a href="#education">Education <span class="n">07</span></a></li>
+        <li><a href="#beyond">Beyond work <span class="n">08</span></a></li>
+      </ul>
+    </details>
+  </nav>
+
+
+  <main>
+
+    <section class="card" id="about">
+      <h2>About</h2>
+      <p class="lede">
+        I build <em>serverless backends on AWS</em> and full-stack web apps, and I like the
+        part of the job where a messy manual process turns into something reliable.
+      </p>
+      <p>
+        This summer I was a software engineering intern at <a href="https://www.brainridgeconsulting.com/">BrainRidge Consulting</a>,
+        on the team moving BMO's Collections Dialer from an on-premises system to
+        <em>Amazon Connect</em>. I wrote the Lambda functions, Step Functions workflows, and
+        CDK infrastructure that pick up, secure, and process the dialer files.
+      </p>
+      <p>
+        I'm studying Computer Science at <a href="https://www.torontomu.ca/">Toronto Metropolitan University</a>
+        (expected June 2028). Before tech, I spent three years running the stain-matching
+        department at a paint retailer, where I also built the database the store still uses.
+      </p>
+      <p class="tags">Serverless AWS &middot; TypeScript &amp; Python &middot; Infrastructure as Code &middot; Full-Stack Web &middot; LLM Evaluation</p>
+    </section>
+
+
+    <!-- EDIT: every number here is in _career/docs/canonical-facts.json or the
+         internship wrap-up. Keep them in sync. -->
+    <section class="card" id="impact">
+      <h2>Impact at a glance</h2>
+      <div class="stats">
+        <div class="stat"><div class="num">8<span>+</span></div><div class="lbl">Lambda functions built<br>for BMO</div></div>
+        <div class="stat"><div class="num">10<span>+</span></div><div class="lbl">AWS services used<br>in one pipeline</div></div>
+        <div class="stat"><div class="num">15<span>+</span></div><div class="lbl">Engineering tasks<br>delivered</div></div>
+        <div class="stat"><div class="num">50<span>%</span></div><div class="lbl">Faster colour-code<br>lookups</div></div>
+        <div class="stat"><div class="num">8</div><div class="lbl">Store locations<br>trained &amp; supported</div></div>
+        <div class="stat"><div class="num">1<span>st</span></div><div class="lbl">Overall, GLO-BUS<br>strategy simulation</div></div>
+      </div>
+    </section>
+
+
+    <section class="card" id="case-study">
+      <h2>Case study: BMO Collections Dialer</h2>
+      <p>
+        BMO's collections team calls customers from lists produced by an on-premises
+        dialer. The migration moves that work to <em>Amazon Connect</em>, which means every
+        dialer file has to be picked up, checked, secured, and turned into customer profiles
+        without a person touching it. I built these parts of the pipeline:
+      </p>
+      <ol class="flow">
+        <li><b>Pick up and validate.</b> A Lambda validates inbound CACS dialer files, splits them by record count so downstream stages run in parallel, and encrypts them into S3.</li>
+        <li><b>Orchestrate.</b> Step Functions chains the Lambdas (TypeScript and Python) under least-privilege IAM, so each stage only touches what it needs.</li>
+        <li><b>Track state.</b> DynamoDB job and file tables, provisioned with AWS CDK, let a failed run resume from the step that failed instead of reprocessing the whole file.</li>
+        <li><b>Deliver to Connect.</b> I migrated the Customer Profiles ingestion workflow from Python to TypeScript and validated it end to end, from S3 upload to profile creation in Amazon Connect.</li>
+      </ol>
+      <p style="margin-top:16px">
+        Alongside the main flow, I built a PGP encryption proof of concept that confirmed
+        encrypted files decrypt and validate inside the pipeline, and a scheduled EventBridge
+        Lambda that cleans up S3 automatically. Everything shipped through pull-request code
+        review and CI/CD.
+      </p>
+    </section>
+
+
+    <!-- EDIT: newest first. Copy an .entry block to add a role. -->
+    <section class="card" id="experience">
+      <h2>Experience</h2>
+
+      <article class="entry">
+        <div class="erow"><h3>Software Engineering Intern</h3><span class="m">May &ndash; Aug 2026</span></div>
+        <div class="org">BrainRidge Consulting &middot; client: BMO &middot; Toronto, ON</div>
+        <ul>
+          <li>Engineered the backend of BMO's Collections Dialer migration to Amazon Connect, a serverless AWS pipeline that ingests, transforms, and delivers dialer files.</li>
+          <li>Delivered <b>8+ Lambda functions</b> across <b>10+ AWS services</b>, shipped through pull-request code review and CI/CD.</li>
+          <li>Migrated Customer Profiles ingestion from Python to TypeScript on Step Functions, validated from S3 to Amazon Connect.</li>
+          <li>Provisioned DynamoDB job tracking with AWS CDK so failed runs resume where they failed, and automated S3 cleanup with EventBridge.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="erow"><h3>AI Product Tester</h3><span class="m">Jan &ndash; Apr 2026</span></div>
+        <div class="org">Bitwize.ai &middot; part-time &middot; Remote</div>
+        <ul>
+          <li>Ran structured LLM alignment testing, grading model output for accuracy, safety, and instruction-following.</li>
+          <li>Refined prompt templates to reduce hallucinations and documented alignment gaps that informed fine-tuning priorities.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="erow"><h3>Business Operations &amp; Technical Support Associate</h3><span class="m">Oct 2022 &ndash; Dec 2025</span></div>
+        <div class="org"><a href="https://serendibpaints.com/serendib/">Serendib Paints &amp; Decor</a> (Benjamin Moore) &middot; Toronto, ON</div>
+        <ul>
+          <li>Led the stain-matching department after 3 months of training, becoming the formulation resource for <b>8 stores</b>.</li>
+          <li>Trained and mentored staff across all 8 locations on product knowledge, formulation, and colour-matching.</li>
+        </ul>
+      </article>
+    </section>
+
+
+    <section class="card" id="projects">
+      <h2>Projects</h2>
+
+      <article class="entry">
+        <div class="erow"><h3>Customer Paint Data Management System</h3><span class="m">Jan &ndash; Apr 2025</span></div>
+        <div class="org">Python &middot; SQL &middot; Bootstrap</div>
+        <ul>
+          <li>Designed the schema and built a web app that replaced the store's paper paint-purchase ledger.</li>
+          <li>Cut colour-code lookup time by <b>50%</b> and raised productivity roughly <b>5x</b>; still in daily use.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="erow"><h3>BookMySalon</h3><span class="m">May &ndash; Aug 2025</span></div>
+        <div class="org">React &middot; Node.js &middot; Tailwind &middot; Twilio API</div>
+        <ul>
+          <li>Full-stack salon booking platform with shop registration, map-based discovery, and live booking.</li>
+          <li>Owners control hours and availability; Twilio sends SMS confirmations and cancellations.</li>
+        </ul>
+      </article>
+
+      <article class="entry">
+        <div class="erow"><h3>GLO-BUS Business Strategy Simulation</h3><span class="m">Sep &ndash; Nov 2025</span></div>
+        <div class="org"><span class="badge">1st place overall &middot; Industry Champion</span></div>
+        <ul>
+          <li>Co-managed a company through a global camera and drone market simulation, setting pricing and R&amp;D.</li>
+          <li>Finished first of all teams, leading on EPS growth, ROE, stock price, and brand image.</li>
+        </ul>
+      </article>
+    </section>
+
+
+    <!-- EDIT: keep these true. A recruiter will ask about anything listed. -->
+    <section class="card" id="skills">
+      <h2>Skills</h2>
+      <div class="comp"><b>Languages</b><span>Python, TypeScript, JavaScript, Java, SQL, HTML, CSS</span></div>
+      <div class="comp"><b>Cloud (AWS)</b><span>Lambda, Step Functions, Amazon Connect, DynamoDB, S3, KMS, SNS, EventBridge, IAM, CloudWatch, CDK</span></div>
+      <div class="comp"><b>Web</b><span>React, Node.js, FastAPI, Tailwind CSS, REST APIs</span></div>
+      <div class="comp"><b>AI &amp; LLM</b><span>Prompt engineering, LLM output evaluation, alignment testing</span></div>
+      <div class="comp"><b>Practices</b><span>Git, CI/CD, Infrastructure as Code, code review, unit testing, Agile, Jira</span></div>
+    </section>
+
+
+    <section class="card" id="education">
+      <h2>Education</h2>
+      <article class="entry">
+        <div class="erow"><h3>Bachelor of Science (Honours), Computer Science</h3><span class="m">Sep 2024 &ndash; Expected Jun 2028</span></div>
+        <div class="org">Toronto Metropolitan University &middot; Toronto, ON</div>
+      </article>
+    </section>
+
+
+    <section class="card" id="beyond">
+      <h2>Beyond work</h2>
+      <article class="entry">
+        <div class="erow"><h3><a href="https://www.canadiantamilcongress.ca">Canadian Tamil Congress</a></h3><span class="m">2023 &ndash; Present</span></div>
+        <div class="org">Community engagement &amp; event support</div>
+        <ul><li>Coordinate volunteers and on-site setup for large Tamil cultural festivals across Toronto.</li></ul>
+      </article>
+      <article class="entry">
+        <div class="erow"><h3>Badminton</h3><span class="m">2023 &ndash; Present</span></div>
+        <div class="org">Player &amp; informal coach, BadmintonZone Scarborough</div>
+        <ul><li>Compete in local championships and have coached 15+ newcomers through the fundamentals.</li></ul>
+      </article>
+    </section>
+
+    <footer>&copy; 2026 Kajurangan Vasantharajan &middot; Toronto, ON</footer>
+  </main>
+
+</div>
+
+<script>
+  // Theme toggle: light by default; remembers an explicit switch to dark.
+  (function () {
+    var root = document.documentElement;
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var current = root.getAttribute('data-theme') || 'light';
+      var next = current === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('theme', next); } catch (e) { /* ignore */ }
+    });
+  })();
+
+  // Highlight the rail link for the section currently on screen.
+  (function () {
+    var links = document.querySelectorAll('.rail a');
+    if (!('IntersectionObserver' in window)) return;
+    var byId = {};
+    links.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var obs = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        links.forEach(function (a) { a.classList.remove('is-active'); });
+        var a = byId[e.target.id];
+        if (a) a.classList.add('is-active');
+      });
+    }, { rootMargin: '-30% 0px -60% 0px' });
+    document.querySelectorAll('main .card').forEach(function (s) { obs.observe(s); });
+  })();
+</script>
+
+</body>
+</html>

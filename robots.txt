@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_career/
+
+Sitemap: https://kajurangan.github.io/sitemap.xml
